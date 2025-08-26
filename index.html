@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agência — Dark Blue</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="https://via.placeholder.com/40x40.png?text=LG" class="logo" alt="Logo" />
+        <span class="brand-name fw-semibold">ThynkXP</span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+          <!-- Dropdown (clica, fica ativo e abre embaixo no desktop) -->
+          <li class="nav-item dropdown dropdown-under">
+            <a class="nav-link dropdown-toggle" href="#" id="servicosDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Serviços</a>
+            <ul class="dropdown-menu dropdown-menu-dark glass-menu shadow-lg" aria-labelledby="servicosDropdown">
+              <li><a class="dropdown-item" href="pages/landingpage.html">Landing Pages</a></li>
+              <li><a class="dropdown-item" href="pages/siteinstitucional.html">Sites Institucionais</a></li>
+              <li><a class="dropdown-item" href="pages/ecommerce.html">E-Commerces</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="pages/quemsomos.html">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/sejaparceiro.html">Seja Parceiro</a></li>
+
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-outline-light rounded-pill px-4 btn-contact"
+              href="https://wa.me/5532988221108?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20pelo%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20retirar%20d%C3%BAvidas%20ou%20criar%20uma%20ideia%2C%20podemos%20conversar%3F">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <span class="badge rounded-pill text-bg-primary-subtle badge-soft">Soluções digitais</span>
+          <h1 class="display-5 fw-bold hero-title mt-3">
+            Sites <span class="grad-blue">rápidos</span>, bonitos e que
+            <span class="grad-blue">convertem</span>.
+          </h1>
+          <p class="lead text-white-50 mt-3">
+            Criamos Landing Pages, Sites Institucionais e E-commerces com foco em performance, SEO e design.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#contato" class="btn btn-primary btn-cta">Falar com a gente</a>
+            <a href="#servicos" class="btn btn-outline-primary btn-cta-outline">Ver serviços</a>
+          </div>
+
+          <ul class="list-unstyled d-flex gap-4 mt-4 small text-white-50">
+            <li class="d-flex align-items-center gap-2"><span class="bullet"></span> Prazo ágil</li>
+            <li class="d-flex align-items-center gap-2"><span class="bullet"></span> Código limpo</li>
+            <li class="d-flex align-items-center gap-2"><span class="bullet"></span> Suporte contínuo</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="" aria-hidden="true">
+            <img src="images/hero-landing.png" alt="Banner de equipe trabalhando em design" class="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
+  </header>
+
+  <!-- RESULTADOS -->
+  <section id="resultados" class="resultados py-5 py-lg-6">
+    <div class="container">
+      <div class="row mb-4 align-items-end">
+        <div class="col-lg-8">
+          <h2 class="h1 fw-bold mb-2">Nossos <span class="grad-blue">Resultados</span></h2>
+          <p class="text-white-50 mb-0">Números que refletem nossa experiência e alcance.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="stat-card reveal" data-delay="0">
+            <div class="stat-top">
+              <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5Zm-7 9a7 7 0 0 1 14 0Z" />
+              </svg>
+              <span class="stat-label">Clientes</span>
+            </div>
+            <div class="stat-number">
+              <span class="value counter" data-target="130" data-duration="1800">0</span><span class="suffix">+</span>
+            </div>
+            <p class="stat-sub text-white-50">Empresas e profissionais atendidos.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="stat-card reveal" data-delay="100">
+            <div class="stat-top">
+              <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M3 5h18v2H3zm2 4h14v2H5zm-2 4h18v2H3zm2 4h10v2H5z" />
+              </svg>
+              <span class="stat-label">Sites Desenvolvidos</span>
+            </div>
+            <div class="stat-number">
+              <span class="value counter" data-target="320" data-duration="2000">0</span><span class="suffix">+</span>
+            </div>
+            <p class="stat-sub text-white-50">Projetos entregues com performance.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="stat-card reveal" data-delay="200">
+            <div class="stat-top">
+              <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="m12 2l2.39 7.26H22l-6.18 4.49L17.82 21L12 16.77L6.18 21l1.99-7.25L2 9.26h7.61z" />
+              </svg>
+              <span class="stat-label">Cidades Alcançadas</span>
+            </div>
+            <div class="stat-number">
+              <span class="value counter" data-target="38" data-duration="1600">0</span><span class="suffix">+</span>
+            </div>
+            <p class="stat-sub text-white-50">Presença em diversos estados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM SOMOS -->
+  <section id="quem-somos" class="about-section py-5 py-lg-6">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <figure class="">
+            <img src="images/quemsomos.png" alt="Nossa equipe em reunião criativa" class="" />
+          </figure>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-content reveal" data-delay="60">
+            <h2 class="h1 fw-bold mb-2">Quem <span class="grad-blue">Somos</span></h2>
+            <p class="text-white-50 mb-3">
+              Somos um time multidisciplinar de designers, devs e estrategistas focados em criar produtos digitais
+              rápidos, acessíveis e orientados a resultados. Unimos <strong>CRO</strong>, <strong>SEO</strong> e
+              <strong>performance</strong> para levar sua marca mais longe.
+            </p>
+            <ul class="list-unstyled d-grid gap-2 small text-white-50">
+              <li class="d-flex align-items-center gap-2"><span class="bullet"></span>Mais de 300 páginas entregues</li>
+              <li class="d-flex align-items-center gap-2"><span class="bullet"></span>Processo claro: briefing → design
+                → dev → growth</li>
+              <li class="d-flex align-items-center gap-2"><span class="bullet"></span>Parcerias de longo prazo com
+                suporte contínuo</li>
+            </ul>
+            <div class="mt-4 d-flex flex-wrap gap-3">
+              <a href="#contato" class="btn btn-primary btn-cta">Iniciar um projeto</a>
+              <a href="#depoimentos" class="btn btn-outline-primary btn-cta-outline">Ver depoimentos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-glow"></div>
+  </section>
+
+  <!-- NOSSOS SERVIÇOS -->
+  <section id="servicos" class="servicos-section py-5 py-lg-6">
+    <div class="container">
+      <div class="row mb-4 align-items-end">
+        <div class="col-lg-8">
+          <h2 class="h1 fw-bold mb-2">Nossos <span class="grad-blue">Serviços</span></h2>
+          <p class="text-white-50 mb-0">Do conceito ao crescimento, cobrimos as frentes essenciais do seu projeto.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1: Landing Pages -->
+        <div class="col-md-6 col-lg-4" id="landing-pages">
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M3 4h18v2H3zm2 4h14v2H5zm-2 4h12v2H3zm2 4h10v2H5z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Landing Pages</h3>
+            <p class="service-text text-white-50">Páginas focadas em conversão com copy e testes A/B.</p>
+            <a href="#contato" class="service-link">Saiba mais</a>
+          </article>
+        </div>
+
+        <!-- 2: Sites Institucionais -->
+        <div class="col-md-6 col-lg-4" id="sites-institucionais">
+          <article class="service-card reveal" data-delay="60">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M4 4h16v14H4zM2 20h20v2H2z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Sites Institucionais</h3>
+            <p class="service-text text-white-50">Presença digital elegante, rápida e fácil de atualizar.</p>
+            <a href="#contato" class="service-link">Saiba mais</a>
+          </article>
+        </div>
+
+        <!-- 3: E-Commerces -->
+        <div class="col-md-6 col-lg-4" id="ecommerces">
+          <article class="service-card reveal" data-delay="120">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M7 18a2 2 0 1 0 0 4a2 2 0 0 0 0-4m10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4M7.2 14h9.8a2 2 0 0 0 1.9-1.4L21 7H6.2L5.3 4H2v2h2l3.6 9.6A3 3 0 0 0 10.5 18H19v-2H10.5a1 1 0 0 1-1-.7z" />
+              </svg>
+            </div>
+            <h3 class="service-title">E-Commerces</h3>
+            <p class="service-text text-white-50">Lojas performáticas com checkout otimizado e integrações.</p>
+            <a href="#contato" class="service-link">Saiba mais</a>
+          </article>
+        </div>
+
+        <!-- 4: SEO -->
+        <div class="col-md-6 col-lg-4" id="seo">
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="m21.71 20.29l-3.4-3.39A8.94 8.94 0 0 0 19 11a9 9 0 1 0-9 9a8.94 8.94 0 0 0 5.9-2.69l3.39 3.4zM4 11a7 7 0 1 1 7 7a7 7 0 0 1-7-7" />
+              </svg>
+            </div>
+            <h3 class="service-title">SEO</h3>
+            <p class="service-text text-white-50">Arquitetura, conteúdo e velocidade para ranquear melhor.</p>
+            <a href="#contato" class="service-link">Saiba mais</a>
+          </article>
+        </div>
+
+        <!-- 5: Design -->
+        <div class="col-md-6 col-lg-4" id="design">
+          <article class="service-card reveal" data-delay="60">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M7 2h10v2H7zM5 6h14v12a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" />
+              </svg>
+            </div>
+            <h3 class="service-title">Design</h3>
+            <p class="service-text text-white-50">Identidade visual, UI e componentes consistentes.</p>
+            <a href="#contato" class="service-link">Saiba mais</a>
+          </article>
+        </div>
+
+        <!-- 6: ADS -->
+        <div class="col-md-6 col-lg-4" id="ads">
+          <article class="service-card reveal" data-delay="120">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M3 3h18v4H3zm0 6h10v12H3zm12 6h6v6h-6z" />
+              </svg>
+            </div>
+            <h3 class="service-title">ADS</h3>
+            <p class="service-text text-white-50">Tráfego pago orientado a ROI em Google e Meta.</p>
+            <a href="#contato" class="service-link">Saiba mais</a>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="servicos-grid"></div>
+  </section>
+
+  <!-- COMO SURGIMOS -->
+  <section id="como-surgimos" class="about-section py-5 py-lg-6">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <!-- Foto à esquerda -->
+        <div class="col-lg-6">
+          <figure class="">
+            <img src="images/comosurgimos.png" alt="Início da nossa jornada — colaboração e código" class="" />
+            <figcaption class="visually-hidden">
+              Time colaborando no início da empresa
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Texto à direita -->
+        <div class="col-lg-6">
+          <div class="reveal" data-delay="60">
+            <h2 class="h1 fw-bold mb-2">
+              Como <span class="grad-blue">Surgimos?</span>
+            </h2>
+            <p class="text-white-50 mb-3">
+              Nascemos da união entre design, tecnologia e estratégia de
+              crescimento. Começamos ajudando pequenas marcas a vender mais com
+              páginas rápidas e objetivas — e evoluímos para um estúdio completo
+              focado em performance, SEO e experiências digitais que convertem.
+            </p>
+
+            <ul class="list-unstyled d-grid gap-2 small text-white-50">
+              <li class="d-flex align-items-center gap-2">
+                <span class="bullet"></span> DNA de <strong>produto</strong> e <strong>resultados</strong>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <span class="bullet"></span> Processos enxutos: briefing → design → dev → growth
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <span class="bullet"></span> Parcerias duradouras com <strong>suporte contínuo</strong>
+              </li>
+            </ul>
+
+            <div class="mt-4 d-flex flex-wrap gap-3">
+              <a href="#contato" class="btn btn-primary btn-cta">Quero conversar</a>
+              <a href="#depoimentos" class="btn btn-outline-primary btn-cta-outline">Ver depoimentos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- glow decorativo da seção (reutiliza o estilo da seção "Quem Somos") -->
+    <div class="about-glow"></div>
+  </section>
+
+
+  <!-- NOSSOS DIFERENCIAIS -->
+  <section id="diferenciais" class="diferenciais-section py-5 py-lg-6">
+    <div class="container">
+      <div class="row mb-4 align-items-end">
+        <div class="col-lg-8">
+          <h2 class="h1 fw-bold mb-2">Nossos <span class="grad-blue">Diferenciais</span></h2>
+          <p class="text-white-50 mb-0">O que nos destaca na hora de entregar resultados reais.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="diff-card reveal">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z" />
+              </svg>
+            </div>
+            <h3 class="diff-title">Performance & Core Web Vitals</h3>
+            <p class="diff-text text-white-50">Sites rápidos, leves e com métricas de carregamento otimizadas.</p>
+            <div class="chip-group"><span class="chip">LCP &lt; 2,5s</span><span class="chip">Imagens
+                otimizadas</span><span class="chip">Code-splitting</span></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="diff-card reveal" data-delay="60">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="m21.7 20.3l-3.4-3.4A9 9 0 1 0 11 20a8.9 8.9 0 0 0 5.9-2.7l3.4 3.4zM4 11a7 7 0 1 1 7 7a7 7 0 0 1-7-7" />
+              </svg>
+            </div>
+            <h3 class="diff-title">SEO Técnico</h3>
+            <p class="diff-text text-white-50">Arquitetura, schema, sitemap e performance orientados ao ranking.</p>
+            <div class="chip-group"><span class="chip">Schema.org</span><span class="chip">Sitemap</span><span
+                class="chip">Meta tags</span></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="diff-card reveal" data-delay="120">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 3a9 9 0 0 0-9 9h2a7 7 0 0 1 14 0h2a9 9 0 0 0-9-9m0 6a4 4 0 0 0-4 4h2a2 2 0 0 1 4 0h2a4 4 0 0 0-4-4m-8 5v2h16v-2z" />
+              </svg>
+            </div>
+            <h3 class="diff-title">UX focado em conversão (CRO)</h3>
+            <p class="diff-text text-white-50">Fluxos claros, microinterações e testes para aumentar o CTR.</p>
+            <div class="chip-group"><span class="chip">A/B testing</span><span class="chip">Heatmaps</span><span
+                class="chip">Copywriting</span></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="diff-card reveal">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m9.4 16.6l-1.8-1.8l3.8-3.8L7.6 7.2l1.8-1.8L16 11zM4 20h16v2H4z" />
+              </svg>
+            </div>
+            <h3 class="diff-title">Código Escalável</h3>
+            <p class="diff-text text-white-50">Padrões claros, componentes reutilizáveis e versionamento.</p>
+            <div class="chip-group"><span class="chip">Design System</span><span
+                class="chip">Componentização</span><span class="chip">CI/CD</span></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="diff-card reveal" data-delay="60">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 1a5 5 0 0 0-5 5v2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a5 5 0 0 0-5-5m-3 7V6a3 3 0 1 1 6 0v2z" />
+              </svg>
+            </div>
+            <h3 class="diff-title">Segurança & LGPD</h3>
+            <p class="diff-text text-white-50">Boas práticas de privacidade, cookies e proteção de dados.</p>
+            <div class="chip-group"><span class="chip">HTTPS/HSTS</span><span class="chip">Consent banner</span><span
+                class="chip">Backups</span></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="diff-card reveal" data-delay="120">
+            <div class="diff-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m1 15h-2v-2h2zm0-4h-2V7h2z" />
+              </svg>
+            </div>
+            <h3 class="diff-title">Suporte & SLA</h3>
+            <p class="diff-text text-white-50">Atendimento rápido com prazos definidos e comunicação clara.</p>
+            <div class="chip-group"><span class="chip">SLA claro</span><span class="chip">Canais diretos</span><span
+                class="chip">Relatórios</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="diferenciais-glow"></div>
+  </section>
+
+  <!-- SEJA NOSSO PARCEIRO -->
+  <section id="seja-parceiro" class="partners-section py-5 py-lg-6">
+    <div class="container">
+      <div class="row mb-4 align-items-end">
+        <div class="col-lg-8">
+          <h2 class="h1 fw-bold mb-2">Seja nosso <span class="grad-blue">parceiro!</span></h2>
+          <p class="text-white-50 mb-0">Programas de parceria para agências, freelancers e consultorias — cresça com a
+            gente.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- (planos) -->
+        <div class="col-md-6 col-lg-4">
+          <article class="plan-card plan-bronze reveal" data-delay="0">
+            <div class="plan-head">
+              <span class="plan-badge bronze">Bronze</span>
+              <h3 class="plan-title">Parceiro Bronze</h3>
+              <p class="plan-desc text-white-50">Ideal para iniciar a colaboração.</p>
+            </div>
+            <ul class="plan-features">
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Até 15% de comissões por projeto</li>
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Suporte 24/7</li>
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Até 3% de comissões em faturas</li>
+            </ul>
+            <div class="plan-cta"><a href="pages/sejaparceiro.html" class="btn btn-outline-primary w-100">Quero ser
+                parceiro</a></div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="plan-card plan-prata reveal plan-featured" data-delay="60">
+            <div class="plan-head">
+              <span class="plan-badge prata">Prata</span>
+              <h3 class="plan-title">Parceiro Prata</h3>
+              <p class="plan-desc text-white-50">Para quem já demanda projetos recorrentes.</p>
+            </div>
+            <ul class="plan-features">
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Até 20% de comissões em projetos</li>
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Suporte 24/7</li>
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Até 5% de comissões em faturas</li>
+            </ul>
+            <div class="plan-cta"><a href="pages/sejaparceiro.html" class="btn btn-primary w-100">Quero ser parceiro</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="plan-card plan-ouro reveal" data-delay="120">
+            <div class="plan-head">
+              <span class="plan-badge ouro">Ouro</span>
+              <h3 class="plan-title">Parceiro Ouro</h3>
+              <p class="plan-desc text-white-50">Parcerias estratégicas de alto volume.</p>
+            </div>
+            <ul class="plan-features">
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Até 25% de comissões em projetos</li>
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Suporte 24/7</li>
+              <li class="feature"><svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="m10 15l-3-3l1.4-1.4L10 12.2l5.6-5.6L17 8z" />
+                </svg>Até 10% de comissões em faturas</li>
+            </ul>
+            <div class="plan-cta"><a href="pages/sejaparceiro.html" class="btn btn-outline-primary w-100">Quero ser
+                parceiro</a></div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="partners-glow"></div>
+  </section>
+
+  <!-- LOGOS (4 por slide, auto 8s) -->
+  <section id="clientes" class="logos-section py-5 py-lg-6">
+    <div class="container">
+      <div class="row mb-4 align-items-end">
+        <div class="col-lg-8">
+          <h2 class="h1 fw-bold mb-2">Algumas empresas que <span class="grad-blue">confiam em nós</span></h2>
+          <p class="text-white-50 mb-0">Marcas que inspiram — e para as quais adoramos entregar resultados.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <div class="carousel-controls d-inline-flex gap-2">
+            <button class="btn btn-outline-primary btn-sm rounded-pill" data-bs-target="#logosCarousel"
+              data-bs-slide="prev" aria-label="Anterior">‹</button>
+            <button class="btn btn-primary btn-sm rounded-pill" data-bs-target="#logosCarousel" data-bs-slide="next"
+              aria-label="Próximo">›</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="logosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-3 g-sm-4 align-items-center">
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal"><img loading="lazy" src="https://logo.clearbit.com/itau.com.br"
+                    alt="Itaú" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="60"><img loading="lazy"
+                    src="https://logo.clearbit.com/bradesco.com.br" alt="Bradesco" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="120"><img loading="lazy"
+                    src="https://logo.clearbit.com/bb.com.br" alt="Banco do Brasil" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="180"><img loading="lazy"
+                    src="https://logo.clearbit.com/petrobras.com.br" alt="Petrobras" /></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-3 g-sm-4 align-items-center">
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal"><img loading="lazy" src="https://logo.clearbit.com/ambev.com.br"
+                    alt="Ambev" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="60"><img loading="lazy"
+                    src="https://logo.clearbit.com/vale.com" alt="Vale" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="120"><img loading="lazy"
+                    src="https://logo.clearbit.com/natura.com.br" alt="Natura" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="180"><img loading="lazy"
+                    src="https://logo.clearbit.com/magazineluiza.com.br" alt="Magazine Luiza" /></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-3 g-sm-4 align-items-center">
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal"><img loading="lazy" src="https://logo.clearbit.com/vivo.com.br"
+                    alt="Vivo" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="60"><img loading="lazy"
+                    src="https://logo.clearbit.com/embraer.com" alt="Embraer" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="120"><img loading="lazy"
+                    src="https://logo.clearbit.com/globo.com" alt="Globo" /></div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="logo-tile reveal" data-delay="180"><img loading="lazy"
+                    src="https://logo.clearbit.com/b3.com.br" alt="B3" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-indicators mt-4 position-static">
+          <button type="button" data-bs-target="#logosCarousel" data-bs-slide-to="0" class="active"
+            aria-label="Slide A"></button>
+          <button type="button" data-bs-target="#logosCarousel" data-bs-slide-to="1" aria-label="Slide B"></button>
+          <button type="button" data-bs-target="#logosCarousel" data-bs-slide-to="2" aria-label="Slide C"></button>
+        </div>
+      </div>
+    </div>
+    <div class="logos-glow"></div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="testimonials-section py-5 py-lg-6">
+    <div class="container">
+      <div class="row mb-4 align-items-end">
+        <div class="col-lg-8">
+          <h2 class="h1 fw-bold mb-2">Depoimentos de nossos <span class="grad-blue">Clientes</span></h2>
+          <p class="text-white-50 mb-0">Quem criou com a gente conta como foi a experiência.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <div class="carousel-controls d-inline-flex gap-2">
+            <button class="btn btn-outline-primary btn-sm rounded-pill" data-bs-target="#depoimentosCarousel"
+              data-bs-slide="prev" aria-label="Anterior">‹</button>
+            <button class="btn btn-primary btn-sm rounded-pill" data-bs-target="#depoimentosCarousel"
+              data-bs-slide="next" aria-label="Próximo">›</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="depoimentosCarousel" class="carousel slide" data-bs-interval="7000" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- 3 slides x 3 depoimentos (total 9) -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=11" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Bruno Souza</h3>
+                      <p class="t-role text-white-50">Head de E-commerce • ModaX</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“Nosso site ficou muito mais rápido e as conversões subiram em 28% em 2 meses.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal" data-delay="60">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=32" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Aline Lima</h3>
+                      <p class="t-role text-white-50">CEO • TechNova</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“Time muito parceiro. Recebemos do design ao SEO prontos para escalar.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal" data-delay="120">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=5" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Carla Mendes</h3>
+                      <p class="t-role text-white-50">Marketing • Fit&Co</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“Excelente comunicação e prazos. O novo site reduziu nosso CPL em 35%.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=21" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Elisa Rocha</h3>
+                      <p class="t-role text-white-50">COO • AgroMais</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“Arquitetura sólida e CMS amigável. Nosso time atualiza tudo sem dev.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal" data-delay="60">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=14" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Diego Ferreira</h3>
+                      <p class="t-role text-white-50">CRO • EduPrime</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“A/B tests bem conduzidos elevaram o CTR de páginas-chave em 22%.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal" data-delay="120">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=45" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Amanda Martins</h3>
+                      <p class="t-role text-white-50">Founder • FinData</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“SEO técnico impecável. Saímos da 2ª página para o topo em 90 dias.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=3" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Gabriel Nunes</h3>
+                      <p class="t-role text-white-50">CMO • VidaBem</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“Design muito acima da média e performance consistente no mobile.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal" data-delay="60">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=41" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Henrique Alves</h3>
+                      <p class="t-role text-white-50">Diretor • ConectaLabs</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“Entrega redonda, documentação clara e equipe pró-ativa. Viraram parceiros.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="testimonial-card reveal" data-delay="120">
+                  <div class="t-head">
+                    <img src="https://i.pravatar.cc/100?img=67" alt="Foto do cliente" class="avatar" />
+                    <div>
+                      <h3 class="t-name">Davi Costa</h3>
+                      <p class="t-role text-white-50">Growth • MoveFit</p>
+                    </div>
+                  </div>
+                  <p class="t-text">“O novo e-commerce reduziu abandono de carrinho e aumentou ticket médio.”</p>
+                  <div class="t-stars" aria-label="5 de 5"><span>★★★★★</span></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-indicators mt-4 position-static">
+          <button type="button" data-bs-target="#depoimentosCarousel" data-bs-slide-to="0" class="active"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#depoimentosCarousel" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#depoimentosCarousel" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-glow"></div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contact-section py-5 py-lg-6">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5">
+          <div class="contact-intro h-100">
+            <h2 class="h1 fw-bold mb-2">Vamos <span class="grad-blue">conversar?</span></h2>
+            <p class="text-white-50 mb-3">
+              Preencha o formulário ao lado e abriremos o seu WhatsApp com a mensagem pré-preenchida.
+            </p>
+            <ul class="list-unstyled d-grid gap-2 small text-white-50">
+              <li class="d-flex align-items-center gap-2"><span class="bullet"></span>Retorno rápido (horário comercial)
+              </li>
+              <li class="d-flex align-items-center gap-2"><span class="bullet"></span>Orçamento sem compromisso</li>
+              <li class="d-flex align-items-center gap-2"><span class="bullet"></span>Briefing objetivo</li>
+            </ul>
+
+            <div class="contact-info mt-4">
+              <div class="d-flex align-items-center gap-2">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5m0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5" />
+                </svg>
+                <span>contato@thynkxp.com.br</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-2">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.26a11 11 0 0 0 3.46.55a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 7a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1a11 11 0 0 0 .55 3.45a1 1 0 0 1-.26 1Z" />
+                </svg>
+                <span>WhatsApp comercial</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <!-- Troque o número no data-whatsapp abaixo (DDI+DDD+NÚMERO) -->
+          <form id="contactForm" class="contact-card reveal" data-whatsapp="5532988221108" autocomplete="on" novalidate>
+            <div class="row g-3">
+              <div class="col-12">
+                <label for="nome" class="form-label">Nome e Sobrenome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex.: Maria Silva" required />
+              </div>
+
+              <div class="col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000"
+                  inputmode="tel" />
+              </div>
+
+              <div class="col-md-6">
+                <label for="assunto" class="form-label">Assunto</label>
+                <select class="form-select" id="assunto" name="assunto" required>
+                  <option selected disabled value="">Selecione...</option>
+                  <option>Desejo criar uma Landing Page</option>
+                  <option>Desejo criar um Site Institucional</option>
+                  <option>Desejo criar um E-Commerce</option>
+                  <option>Outros</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="4"
+                  placeholder="Conte rapidamente sua ideia ou necessidade" required></textarea>
+              </div>
+
+              <div class="col-12 d-flex align-items-center justify-content-between flex-wrap gap-3">
+                <small class="text-white-50">
+                  Ao enviar, abriremos o WhatsApp com a mensagem:<br />
+                  <span class="text-white">"olá, tudo bem? Me chamo (Nome), (Assunto).<br />Observação:
+                    (Mensagem)"</span>
+                </small>
+                <button id="btnEnviar" type="submit" class="btn btn-primary btn-cta">
+                  Enviar pelo WhatsApp
+                </button>
+              </div>
+
+              <div class="col-12">
+                <div class="form-feedback small mt-2" id="formFeedback" aria-live="polite"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="contact-glow"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer pt-5">
+    <div class="container">
+      <div class="row g-4 footer-top">
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="https://via.placeholder.com/40x40.png?text=LG" class="logo rounded-circle" alt="Logo" />
+            <span class="fw-bold">ThynkXP</span>
+          </div>
+          <p class="text-white-50 small mb-3">
+            Construímos experiências digitais rápidas, acessíveis e bonitas — do primeiro wireframe ao crescimento.
+          </p>
+          <div class="d-flex gap-2">
+            <a class="social-link" href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M6.94 6.5a1.72 1.72 0 1 0 0-3.44a1.72 1.72 0 0 0 0 3.44M3.75 8.25h6.38V21H3.75zm7.94 0h6.12v1.75h.09c.85-1.51 2.92-2.75 5.02-2.75C24 7.25 24 11.06 24 15.69V21h-6.36v-4.77c0-1.14-.02-2.6-1.58-2.6c-1.59 0-1.84 1.24-1.84 2.52V21H11.7z" />
+              </svg>
+            </a>
+            <a class="social-link" href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3zm-5 3.5A5.5 5.5 0 1 0 17.5 13A5.5 5.5 0 0 0 12 7.5m0 2A3.5 3.5 0 1 1 8.5 13A3.5 3.5 0 0 1 12 9.5M18 6.2a.8.8 0 1 0 .8.8a.8.8 0 0 0-.8-.8" />
+              </svg>
+            </a>
+            <a class="social-link" href="#" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M10 15V9l5 3m9-3a30 30 0 0 0-.5-5.5A3.5 3.5 0 0 0 20.5.5A85 85 0 0 0 12 0a85 85 0 0 0-8.5.5A3.5 3.5 0 0 0 .5 5.5A30 30 0 0 0 0 11.9a30 30 0 0 0 .5 5.5A3.5 3.5 0 0 0 3.5 23.5A85 85 0 0 0 12 24a85 85 0 0 0 8.5-.5A3.5 3.5 0 0 0 23.5 17a30 30 0 0 0 .5-5.5A30 30 0 0 0 23.5 6z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="text-uppercase text-white-50 small mb-2">Mapa</h6>
+          <ul class="list-unstyled small footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/landingpage.html">Landing Page</a></li>
+            <li><a href="pages/siteinstitucional.html">Site Institucional</a></li>
+            <li><a href="pages/ecommerce.html">E-commerce</a></li>
+            <li><a href="pages/quemsomos.html">Quem Somos</a></li>
+            <li><a href="pages/sejaparceiro.html">Seja Parceiro</a></li>
+            <li><a
+                href="https://api.whatsapp.com/send/?phone=5532988221108&text&type=phone_number&app_absent=0">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h6 class="text-uppercase text-white-50 small mb-2">Contato</h6>
+          <ul class="list-unstyled small text-white-50">
+            <li>+55 (32) 9 8822-1108</li>
+            <li>contato@thynkxp.com</li>
+            <li>Rua Espirito Santo, 1115 — Juiz de Fora</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="text-uppercase text-white-50 small mb-2">Newsletter</h6>
+          <form class="newsletter-form" onsubmit="return false;">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Seu e-mail" aria-label="Seu e-mail">
+              <button class="btn btn-outline-primary" type="button">Assinar</button>
+            </div>
+            <small class="text-white-50 d-block mt-2">Receba novidades e cases (1x/mês).</small>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between pt-4 pb-4 mt-4">
+        <small class="text-white-50">© <span id="yearCopy">2025</span> ThynkXP — Todos os direitos reservados.</small>
+        <a href="#home" class="to-top btn btn-outline-primary btn-sm rounded-pill">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- App JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>
